@@ -57,6 +57,58 @@ Status MakeTree(BinaryTree *bt, ElemType val,
     return OK;
 }
 
+Status PreOrderNode(BTNode *node) {
+    if (!node) {
+        return OK;
+    }
+    printf("%c", node->data);
+    PreOrderNode(node->left_c);
+    PreOrderNode(node->right_c);
+    return OK;
+}
+
+Status PreOrderTree(BinaryTree *bt) {
+    printf("{PreOrderTree} Order: ");
+    PreOrderNode(bt->root);
+    printf("\n");
+    return OK;
+}
+
+Status InOrderNode(BTNode *node) {
+    if (!node) {
+        return OK;
+    }
+    InOrderNode(node->left_c);
+    printf("%c", node->data);
+    InOrderNode(node->right_c);
+    return OK;
+}
+
+Status InOrderTree(BinaryTree *bt) {
+    printf("{InOrderTree} Order: ");
+    InOrderNode(bt->root);
+    printf("\n");
+    return OK;
+}
+
+Status PostOrderNode(BTNode *node) {
+    if (!node) {
+        return OK;
+    }
+    PostOrderNode(node->left_c);
+    PostOrderNode(node->right_c);
+    printf("%c", node->data);
+    return OK;
+}
+
+Status PostOrderTree(BinaryTree *bt) {
+    printf("{PostOrderTree} Order: ");
+    PostOrderNode(bt->root);
+    printf("\n");
+    return OK;
+}
+
+
 Status test() {
     BinaryTree a, b, x, y, z;
     InitTree(&a);
@@ -67,8 +119,11 @@ Status test() {
     MakeTree(&y, 'E', &a, &b);
     MakeTree(&z, 'F', &a, &b);
     MakeTree(&x, 'C', &y, &z);
-    MakeTree(&y, 'B', &a, &b);
-    MakeTree(&z, 'D', &y, &x);
+    MakeTree(&y, 'D', &a, &b);
+    MakeTree(&z, 'B', &y, &x);
+    PreOrderTree(&z);
+    InOrderTree(&z);
+    PostOrderTree(&z);
     return OK;
 }
 
