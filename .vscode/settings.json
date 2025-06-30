@@ -1,6 +1,5 @@
 {
     "files.associations": {
-        "*.lg4": "lingo",
         "string": "cpp",
         "stdlib.h": "c",
         "stdio.h": "c",
