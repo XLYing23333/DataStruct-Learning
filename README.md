@@ -1,6 +1,5 @@
 # DataStructure
 
-> Suitable for DS-811《数据结构 (C语言) 第2版 慕课版》
 >
 > Date: 2025-03-01
 > 
