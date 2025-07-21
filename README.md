@@ -13,7 +13,7 @@
 > 
 > Compiler: gcc (Debian 12.2.0-14) 12.2.0
 >
-> >代码并非100%复现，中间更改了一些个人的想法，如有侵权，请联系Email: `xly@xly23333.xyz`删除。
+> > The code is not a 100% reproduction; some personal ideas have been incorporated. If there is any infringement, please contact Email: `xly@xly23333.xyz` for removal.
 > 
 >![LOGO](https://i2.hdslb.com/bfs/space/4adb2c63ed4ba8950194316a08ec8cacbcf255ff.png)
 
@@ -106,3 +106,21 @@ typedef struct {
     - [BtTree.c](./Unit5_Tree/LeverOrder/BtTree.c)
     - [LevelOrder.c](./Unit5_Tree/LeverOrder/LevelOrder.c)
     - [build.sh](./Unit5_Tree/LeverOrder/build.sh)
+
+3. [Application](./Unit5_Tree/Application/)
+   > Calculating the number of nodes in a binary tree
+   > Clearing a binary tree
+   > Building a binary tree in pre-order by str
+    - [BtTree.h](./Unit5_Tree/Application/BtTree.h)
+    - [BtTree.c](./Unit5_Tree/Application/BtTree.c)
+    - [app.c](./Unit5_Tree/Application/app.c)
+    - [build.sh](./Unit5_Tree/Application/build.sh)
+  
+4. [NonTraversalApplication](./Unit5_Tree/NonTraversalApplication/)
+    > InOrder traversal of a binary tree without recursion
+    - [Stack.h](./Unit5_Tree/NonTraversalApplication/Stack.h)
+    - [Stack.c](./Unit5_Tree/NonTraversalApplication/Stack.c)
+    - [BtTree.h](./Unit5_Tree/NonTraversalApplication/BtTree.h)
+    - [BtTree.c](./Unit5_Tree/NonTraversalApplication/BtTree.c)
+    - [ntapp.c](./Unit5_Tree/NonTraversalApplication/ntapp.c)
+    - [build.sh](./Unit5_Tree/NonTraversalApplication/build.sh)
